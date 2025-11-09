@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black; /* Black background */
+            color: gold; /* Gold text */
+        }
+        .container {
+            text-align: center;
+            border: 5px solid gold; /* Gold border */
+            padding: 20px;
+            border-radius: 10px;
+            background-color: black; /* Black background */
+            position: relative;
+        }
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            border: 5px solid gold;
+            border-image: url('https://www.publicdomainpictures.net/pictures/320000/velka/rose-border.jpg') 30 round; /* Gold flower border */
+            border-radius: 15px;
+            pointer-events: none;
+        }
+        h1 {
+            font-size: 3em;
+            color: gold; /* Shiny gold text */
+            text-shadow: 0 0 10px gold;
+        }
+        .images {
+            margin-top: 20px;
+        }
+        .images img {
+            width: 150px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .large-image img {
+            width: 300px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wish you a Happy Birthday, [Name]!</h1>
+        <div class="images">
+            <img src="path_to_person_picture.jpg" alt="Person Picture">
+            <img src="path_to_rose_picture.jpg" alt="Rose Picture">
+        </div>
+        <div class="large-image">
+            <img src="path_to_cake_picture.jpg" alt="Cake Picture">
+        </div>
+    </div>
+</body>
+</html>
